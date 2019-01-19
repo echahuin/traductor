@@ -1,67 +1,85 @@
-#body{
-    background: #b9adad;
-}
-#textAreas {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
- 
- #toLang, #fromLang {
-    width: 45%;
-    height: 350px;
-    text-align: left;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: bold;
-  }
-  #fromLang{
-      margin: 0px 15px 0px 55px;
-      background: #e7e5e5;
-  }
-  #toLang{
-    background: #d1d0d0;
-}
-#h1{
-      font-family: 'Coiny', cursive;
-      color :rgb(105, 22, 22);
-      font-size: 50px;
-      text-shadow: 1px 1px 2px black, 0 0 2px blue, 0 0 1px darkblue; 
-      
-  }
-  .ph-center::-webkit-input-placeholder {
-    text-align: left;
-    line-height: 27px;/* Centrado vertical */
-  }
- 
- 
-  @media only screen and (max-width: 700px){
-    #textAreas {
-        display: inline;
-        flex-wrap: nowrap;
-        flex-direction: row;
-      }
-      #toLang, #fromLang {
-        width: 85%;
-        height: 250px;
-        font-size: 16px;
-        color: black;
-        border-radius: 10px;
-        text-align: left;
-        font-weight: bold;
-      }
-      #fromLang{
-          margin: 8px 50px 10px 30px;
-          background: #e7e5e5;
-      }
-      #toLang{
-        margin: 0px 100px 100px 30px;
-        background: #d1d0d0;
-    }
-      .ph-center::-webkit-input-placeholder {
-        text-align: left;
-        line-height: 27px;/* Centrado vertical */
-      }
-  }
 
+html,
+body {
+	height: 100%;
+	background-color: #eee !important;
+}
+
+form {
+	height: 90%;
+  min-height: 90%;
+	margin-bottom: 2em !important;
+}
+
+#textAreas {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	height: 100%;
+	min-height: 100%;
+}
+
+#toLang, #fromLang {
+	background: #fff;
+	text-align: left;
+	font-size: 20px;
+
+	width: 45%;
+	max-width: 40em;
+	height: 100%;
+	border-radius: 5px;
+	margin: 10px 2em 0 2em;
+}
+
+#button {  
+	text-align: center;
+	border-radius: 15px;
+	cursor: pointer;
+	color: black;
+	vertical-align: middle;
+}
+
+#h1{
+		font-family: 'Coiny', cursive;
+		color :red;
+		font-size: 50px;
+}
+@media only screen and (max-width: 700px){
+#textAreas {
  
+			display: inline;
+			flex-wrap: nowrap;
+			flex-direction: row;
+		}
+	 
+		#button {  
+	 text-align: center;
+		border-radius: 15px;
+		cursor: pointer;
+		color: black;
+		vertical-align: middle;
+		}
+	 #toLang, #fromLang {
+			background: #e0caca;
+			width: 85%;
+			height: 250px;
+			font-size: 20px;
+			border-radius: 30px;
+			
+		}
+		#fromLang{
+				margin: 8px 50px 10px 30px;
+		}
+		#toLang{
+			margin: 0px 100px 100px 30px;
+	}
+	
+	#h1{
+				font-family: 'Coiny', cursive;
+				color :red;
+				font-size: 50px;
+		}
+}
+
+
+
